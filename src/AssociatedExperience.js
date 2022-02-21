@@ -1,8 +1,10 @@
+// import {Link} from 'react-router-dom'
+
 function AssociatedExperience(){
 
     return(
         <>
-        <h1>elloGuvnah1</h1>
+        <a className="white" href="http://www.noparticularhours.com" target="_blank"  rel="noreferrer" /*noopener*/ >No Particular Hours</a>
         </>
     )
 }

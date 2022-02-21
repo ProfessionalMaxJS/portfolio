@@ -7,12 +7,15 @@ function WebExperience(){
     return(
         <>
 
+      <a href="https://youtu.be/i81w1Ufl2RM" target="_blank" rel="noreferrer noopener">
       <img className="blue" style={{width:"25%", height:"auto"}} src={dtdj} alt="Death to Dad Jokes demo" onClick={()=>console.log("elloGuvnah1")}/>
-      <br />
+      </a><br />
+      <a href="https://youtu.be/Q_tBBrbX8oY" target="_blank" rel="noreferrer noopener">
       <img className="blue" style={{width:"25%", height:"auto"}} src={chakra} alt="Death to Dad Jokes demo" onClick={()=>console.log("elloGuvnah2")}/>
-      <br />
+      </a><br />
+      <a href="https://youtu.be/Mw1BVkK5coM" target="_blank" rel="noreferrer noopener">
       <img className="blue" style={{width:"25%", height:"auto"}} src={reciPlenty} alt="Death to Dad Jokes demo" onClick={()=>console.log("elloGuvnah3")}/>
-
+      </a>
         </>
     )
 }
