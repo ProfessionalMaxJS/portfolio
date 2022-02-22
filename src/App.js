@@ -16,8 +16,8 @@ You found my site! Thanks for your patience while I get it up and running.
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header> */}
+        </a> */}
+      </header>
     </div>
   );
 }
