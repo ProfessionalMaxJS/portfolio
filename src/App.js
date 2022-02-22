@@ -9,7 +9,7 @@ function App() {
         <p>
 You found my site! Thanks for your patience while I get it up and running.
         </p>
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -17,7 +17,7 @@ You found my site! Thanks for your patience while I get it up and running.
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
