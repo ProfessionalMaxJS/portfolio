@@ -67,10 +67,18 @@ div.hovee{
 }
 
 div.hovee:hover{
-  cursor: pointer;
-  transform: translate(10px, 10px);
+  /* cursor: pointer; */
+  /* transform: translate(10px, 10px); */
 }
 
+div.hovee#resume:hover, div.hovee#experience:hover, div.hovee#bio:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+div.hovee#resume:active, div.hovee#experience:active, div.hovee#bio:active{  
+  color: orange;
+}
 /* 
 @keyframes App-logo-spin {
   from {
