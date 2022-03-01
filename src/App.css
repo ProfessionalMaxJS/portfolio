@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@100&display=swap'); 
-
-/* .App {
-  text-align: center;
-} */
-
-/* *{
-  border: 1px solid red;
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Poppins:wght@100&display=swap'); 
 
 body {
   background-color: #282c34;
@@ -16,9 +7,8 @@ body {
 .white{
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-}
-.white:link{
   color: white;
+  text-decoration: none;
 }
 .white:visited{
   color:white;
@@ -27,7 +17,7 @@ body {
   color:blue;
 }
 .white:active{
-  color:red;
+  color:orange;
 }
 
 .blue{
@@ -36,26 +26,27 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .blue>p{
   max-width: 60%;
   margin-left: 1em;
 }
-
-a>img{
+h2, h3 {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.blue a>img{
   border: 5px solid white;
   border-radius: 5px 5px 5px 5px;
   height: 100%;
   width: auto;
 }
-
-a>img:hover{
+.blue a>img:hover{
   border: 5px solid blue;
   border-radius: 5px 5px 5px 5px;
-}
 
-a>img:active{
-  border: 5px solid red;
+}
+.blue a>img:active{
+  border: 5px solid orange;
 }
 
 .App-header {
@@ -65,8 +56,19 @@ a>img:active{
   flex-direction: column;
   justify-content: left;
   font-family: 'Playfair Display', serif;
+  font-weight: 400;
   font-size: calc(21.5px + 2vmin);
   color: white;
+}
+
+div.hovee{
+  font-weight: 900;
+  font-size: larger;
+}
+
+div.hovee:hover{
+  cursor: pointer;
+  transform: translate(10px, 10px);
 }
 
 /* 
