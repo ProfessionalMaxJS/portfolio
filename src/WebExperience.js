@@ -11,7 +11,7 @@ function WebExperience(){
         <h3 >ReciPlenty</h3>
         <div className="blue">
         <a href="https://youtu.be/Mw1BVkK5coM" target="_blank" rel="noreferrer noopener">
-      <img src={reciPlenty} alt="ReciPlenty demo" />
+      <img src={reciPlenty} alt="ReciPlenty demo" onMouseOver={()=>reciPlenty.pause()} />
       </a>
       <p>Capstone project for FlatIron School Software Engineering course. Utilizes Ruby bcrypt gem, Rails Active Storage technology, Spoonacular API (+2 others), to bring users a straightforward way to log their favorite recipes. Recipes developed by the user can be written on a "worksheet"-like screen (where users can also upload photos for their dishes), and  saved onto their list. Recipes discovered through the Search bar can also be saved to the same master list. All saved recipes include a toggle for the user to track whether or not they have cooked that dish, as well as the ability to be edited.<br/>Last updated February, 2022.
       <a className="white" href="https://github.com/ProfessionalMaxJS/ReciPlenty" target="_blank" rel="noreferrer noopener">  Git Repo.</a>

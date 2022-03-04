@@ -55,8 +55,11 @@ function App() {
  </div>}
     
   {web && <div style={{display:"flex"}} >
-    <hr style={{transform:"skewY(-22deg)", width:"100px"}} />
-    <div> <div className='white' to="/WebExperience" >Experience / Projects</div></div>
+    <div className="white" style={{display:"flex", flexDirection:"column", textAlign: "center"}}>
+    <div>~</div> <div style={{display:"flex" }}  className='white'> 
+    <hr style={{width:"100px", height:"1px", alignItems:'center'}} />
+     Experience / Projects</div><div>~</div>
+    </div>
     </div>}
 
   {assoc && <div style={{display:"flex"}} >
