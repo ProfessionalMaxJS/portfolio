@@ -62,23 +62,35 @@ h2, h3 {
 }
 
 div.hovee{
+  color: white;
   font-weight: 900;
-  font-size: larger;
+  /* font-size: larger; */
+  cursor: pointer;
+  animation: nyc-flag 9s infinite;
 }
+
+/* #web{
+  transition: width 2s;
+} */
+
+/* @keyframes boom {
+   50%{
+     flex: 1;
+   }
+} */
 
 /* div.hovee:hover{
   cursor: pointer; 
   transform: translate(10px, 10px);
 } */
 
-div.hovee#resume:hover, div.hovee#experience:hover, div.hovee#bio:hover{
-  cursor: pointer;
+/* div.hovee#resume:hover, div.hovee#experience:hover, div.hovee#bio:hover{
   color: blue;
 }
 
 div.hovee#resume:active, div.hovee#experience:active, div.hovee#bio:active{  
   color: orange;
-}
+} */
 
 #myNameIs{
   font-family: 'Poppins', sans-serif;
@@ -86,6 +98,13 @@ div.hovee#resume:active, div.hovee#experience:active, div.hovee#bio:active{
   font-size: 22vmin;
   animation: nyc-flag 9s infinite;
 }
+
+@keyframes nyc-flag{
+  0% { color: white;  }
+  33% { color: orange; }
+  66% { color: blue; }
+}
+
 
 .center{
   font-size: 4vmin;
@@ -96,11 +115,6 @@ div.hovee#resume:active, div.hovee#experience:active, div.hovee#bio:active{
   transform: translate(-50%, -50%);
 }
 
-@keyframes nyc-flag{
-  0% { color: white;  }
-  33% { color: orange; }
-  66% { color: blue; }
-}
 
 
 /* @keyframes App-logo-spin {
