@@ -22,13 +22,13 @@ function App() {
   <Route path="/WebExperience" element={<WebExperience />} />
 </Routes>
 
-    <div className="blue" id="webdeveloper" >
+    <div id="webdeveloper" >
     
     <div id="web" style={{display: "flex"}} >
     <div>w</div><div>e</div>
     <div className="hovee" id="bio" onClick={()=>paginate("/")} onMouseOver={()=>setHome(true)} onMouseLeave={()=>setHome(false)} >b 
     {home&&
-     <span > => Bio / Contact</span>}
+     <span > =&gt; Bio / Contact&nbsp;&nbsp;</span>}
     </div>
     </div>
    
@@ -36,7 +36,7 @@ function App() {
     <div>d{/*</div><div>*/}e</div><div>v</div>
     <div className="hovee" id="experience" onClick={()=>paginate("/WebExperience")} onMouseOver={()=>setWeb(true)} onMouseLeave={()=>setWeb(false)} >e 
      {web&&
-     <span > => Experience / Projects</span>}
+     <span > =&gt; Experience / Projects&nbsp;&nbsp;</span>}
      </div>
     
     </div>
@@ -44,7 +44,7 @@ function App() {
     <div>l</div><div>o</div><div>p</div><div>e</div>
     <div className="hovee" id="resume" onClick={()=>paginate("/AssociatedExperience")} onMouseOver={()=>setAssoc(true)} onMouseLeave={()=>setAssoc(false)} >r 
     {assoc&&
-     <span > => Resume / Other Cool Things</span>}
+     <span > =&gt; Resume / Other Cool Things&nbsp;</span>}
     </div>
     </div>
 
