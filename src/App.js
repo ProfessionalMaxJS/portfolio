@@ -22,18 +22,18 @@ function App() {
   <Route path="/WebExperience" element={<WebExperience />} />
 </Routes>
 
-    <div id="webdeveloper" style={{ position:"fixed", bottom: "0px", left: "0px", color: "black", display: "flex", flexDirection: "column", backgroundColor:"#D3D3D3", paddingRight:"1vmin" /*, maxWidth: "10%"*/}} >
+    <div className="blue" id="webdeveloper" >
     
     <div id="web" style={{display: "flex"}} >
     <div>w</div><div>e</div>
     <div className="hovee" id="bio" onClick={()=>paginate("/")} onMouseOver={()=>setHome(true)} onMouseLeave={()=>setHome(false)} >b 
     {home&&
-     <span> => Bio / Contact</span>}
+     <span > => Bio / Contact</span>}
     </div>
     </div>
    
     <div id="deve" style={{display: "flex"}}>
-    <div>d</div><div>e</div><div>v</div>
+    <div>d{/*</div><div>*/}e</div><div>v</div>
     <div className="hovee" id="experience" onClick={()=>paginate("/WebExperience")} onMouseOver={()=>setWeb(true)} onMouseLeave={()=>setWeb(false)} >e 
      {web&&
      <span > => Experience / Projects</span>}
@@ -47,6 +47,7 @@ function App() {
      <span > => Resume / Other Cool Things</span>}
     </div>
     </div>
+
     </div>
 
     {/* <div id="links" style={{ display: "flex", alignItems: "stretch", flexDirection: "column", backgroundColor:"#D3D3D3"}} >
