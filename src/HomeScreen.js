@@ -9,13 +9,13 @@ function HomeScreen(){
     <div className="center" >
     <div>You did it! You found it! You made it to</div>
     <div id="myNameIs" >MAXEES.DEV</div>
-    {/* <div>Now...Hire Me?</div> */}
-    <div>
-        <a className="white" target="_blank" rel="noreferrer noopener" href="https://tinyurl.com/mesVIDINTRO" >Video Intro </a>
-        <a className="white" target="_blank" rel="noreferrer noopener" href="http://www.maxees.blogspot.com" >Blog </a>
-        <a className="white" target="_blank" rel="noreferrer noopener" href="https://www.GitHub.com/ProfessionalMaxJS" >GitHub </a>
-        <a className="white" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/maxees/" >LinkedIn </a>
-        <a className="white" target="_blank" rel="noreferrer noopener" href="mailto:max@maxees.dev?subject=You're Hired!" >Email </a>
+    <div style={{marginBottom:"8vh"}} >the Professional Portfolio of Max E. Engel-Streich</div>
+    <div style={{fontSize:"2.5rem"}} >
+        <a className="white" target="_blank" rel="noreferrer noopener" href="https://youtu.be/3e_Zbiu537g" >Video Intro&nbsp;&nbsp;&nbsp;</a>
+        <a className="white" target="_blank" rel="noreferrer noopener" href="http://www.maxees.blogspot.com" >Blog&nbsp;&nbsp;&nbsp;</a>
+        <a className="white" target="_blank" rel="noreferrer noopener" href="https://www.GitHub.com/ProfessionalMaxJS" >GitHub&nbsp;&nbsp;&nbsp;</a>
+        <a className="white" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/maxees/" >LinkedIn&nbsp;&nbsp;&nbsp;</a>
+        <a className="white" target="_blank" rel="noreferrer noopener" href="mailto:max@maxees.dev?subject=You're Hired!" >Email&nbsp;&nbsp;&nbsp;</a>
     </div> 
     </div>
         </>

@@ -76,6 +76,8 @@ div.hovee{
   font-weight: 500;
   font-size: 12rem;
   animation: nyc-flag 9s infinite;
+  margin-top: -8vh;
+  margin-bottom: -8vh;
 }
 
 @keyframes nyc-flag{
@@ -86,7 +88,7 @@ div.hovee{
 
 
 .center{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
   position: absolute;
   left: 50%;
@@ -95,10 +97,9 @@ div.hovee{
 }
 
 #webdeveloper{
-  /* visibility: hidden; */
-  /* width:12.5vw; */
   display: flex;
   /* flex-direction:column; */
+  font-size: 2rem;
   font-weight: 900;
   position: fixed; 
   bottom: 0px; 
@@ -108,7 +109,7 @@ div.hovee{
   padding-right:1vw;
   border: 5px solid white;
   border-radius: 5px 5px 5px 5px;
-  transition: width 1s, border-color 3s;
+  /* transition: width 1s; */
   animation: my-box 9s infinite;
 }
 
@@ -117,7 +118,6 @@ div.hovee{
   33% { border-color: orange; }
   66% { border-color: blue; }
 }
-
 
 /* #webdeveloper:hover{
   width: 45vw;

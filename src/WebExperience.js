@@ -1,40 +1,51 @@
+import { useState } from 'react';
 import dtdj from './gifs/DeathToDadJokes.gif'
+import dtdjStill from './gifs/dtdjStill.jpg'
 import chakra from './gifs/ChakraCafe.gif'
+import chakraStill from './gifs/ChakraCafeStill.jpg'
 import reciPlenty from './gifs/ReciPlenty.gif'
+import reciPlentyStill from './gifs/ReciPlentyStill.jpg'
 import cinema from './gifs/USSRapture.gif'
+import cinemaStill from './gifs/CinemaStill.jpg'
 
 function WebExperience(){
+
+  const [playingReciPlenty, setPlayingReciPlenty] = useState(false)
+  const [playingDTDJ, setPlayingDTDJ] = useState(false)
+  const [playingChakra, setPlayingChakra] = useState(false)
+  const [playingCinema, setPlayingCinema] = useState(false)
   
     return(
         <>
         <h2 style={{textAlign:"center"}} >My Projects</h2>
-        <h3 >ReciPlenty</h3>
-        <div className="blue">
+        <div style={{display:"flex"}} >
+        <div style={{display:"flex", flexDirection:"column"}} className="blue">
+        <div >ReciPlenty</div>
         <a href="https://youtu.be/Mw1BVkK5coM" target="_blank" rel="noreferrer noopener">
-      <img src={reciPlenty} alt="ReciPlenty demo" />
+      <img /*onMouseOver={()=>setPlayingReciPlenty(true)} onMouseLeave={()=>setPlayingReciPlenty(false)} src={playingReciPlenty ? reciPlenty : */src={reciPlentyStill} alt="ReciPlenty demo" />
       </a>
       <p>Capstone project for FlatIron School Software Engineering course. Utilizes Ruby bcrypt gem, Rails Active Storage technology, Spoonacular API (+2 others), to bring users a straightforward way to log their favorite recipes. Recipes developed by the user can be written on a "worksheet"-like screen (where users can also upload photos for their dishes), and  saved onto their list. Recipes discovered through the Search bar can also be saved to the same master list. All saved recipes include a toggle for the user to track whether or not they have cooked that dish, as well as the ability to be edited.<br/>Last updated February, 2022.
       <a className="white" href="https://github.com/ProfessionalMaxJS/ReciPlenty" target="_blank" rel="noreferrer noopener">  Git Repo.</a>
       <span className="white" onClick={()=>window.open("https://reciplenty.herokuapp.com/")}>  App.</span>
-      </p></div>
+      </p></div></div>
 
       <h3>Death to Dad Jokes </h3>
       <div className="blue">
       <a href="https://youtu.be/i81w1Ufl2RM" target="_blank" rel="noreferrer noopener">
-      <img src={dtdj} alt="Death to Dad Jokes demo" />
+      <img onMouseOver={()=>setPlayingDTDJ(true)} onMouseLeave={()=>setPlayingDTDJ(false)} src={playingDTDJ ? dtdj : dtdjStill} alt="Death to Dad Jokes demo" />
       </a>
-      <p>Using HTML, CSS and ("vanilla") Javascript, <span className="white" onClick={()=>window.open("https://github.com/Smith-Reesie")} > Maurice Smith</span> and I built this to allow users to cycle through "Dad" Jokes (c/o the "icanazdadjoke" API) and rate them (alongside spoooooky sound effects), keeping a running tally of liked vs disliked. Each new joke is loaded with the user's click of a rating; if (newJoke.includes("?")), then the joke is loaded with the punchline (ie, all text after "?") hidden, and a button is displayed to remind the user of their own complicity in the cringiness.<br />Completed October, 2021. 
-      <span className="white" onClick={()=>window.open("https://github.com/ProfessionalMaxJS/DeathToDadJokes")}>  Git Repo.</span>
-      <span className="white" onClick={()=>window.open("https://professionalmaxjs.github.io/DeathToDadJokes")}>  App.</span>
+      <p>Using HTML, CSS and ("vanilla") Javascript, <a className="white" href="https://github.com/Smith-Reesie" target="_blank" rel="noreferrer noopener"> Maurice Smith</a> and I built this to allow users to cycle through "Dad" Jokes (c/o the "icanazdadjoke" API) and rate them (alongside spoooooky sound effects), keeping a running tally of liked vs disliked. Each new joke is loaded with the user's click of a rating; if (newJoke.includes("?")), then the joke is loaded with the punchline (ie, all text after "?") hidden, and a button is displayed to remind the user of their own complicity in the cringiness.<br />Completed October, 2021. 
+      <a className="white" target="_blank" rel="noreferrer noopener" href="https://github.com/ProfessionalMaxJS/DeathToDadJokes">  Git Repo.</a>
+      <a className="white" target="_blank" rel="noreferrer noopener" href="https://professionalmaxjs.github.io/DeathToDadJokes">  App.</a>
       </p>
     </div>
 
       <h3>Chakra Cafe</h3>
       <div className="blue">
       <a href="https://youtu.be/Q_tBBrbX8oY" target="_blank" rel="noreferrer noopener">
-      <img src={chakra} alt="Chakra Cafe demo" />
+      <img onMouseOver={()=>setPlayingChakra(true)} onMouseLeave={()=>setPlayingChakra(false)} src={playingChakra ? chakra : chakraStill} alt="Chakra Cafe demo" />
       </a>
-      <p>Cafe-type mockup site built with <span className="white" onClick={()=>window.open("https://google.com")}>Luis Escobar</span> to represent the menu offerings and order system from Chakra Cafe (a real, but unafilliated, restaurant in Queens, NY). Uses ruby's bcrypt gem to handle authentication/authorization for accounts. Without accounts, users can only browse the site; with accounts they can place orders after logging in. Although the front end functionality is limited to filling and purchasing from a shopping cart, backend tables are in place to track/provide users with their order history, as well as a points/rewards system (which currently only shows up as an "easter egg" in the console) - for future buildouts.<br />Completed January, 2022. 
+      <p>Cafe-type mockup site built with <span className="white" onClick={()=>window.open("https://www.luisalfredoescobar.com/")}>Luis Escobar</span> to represent the menu offerings and order system from Chakra Cafe (a real, but unafilliated, restaurant in Queens, NY). Uses ruby's bcrypt gem to handle authentication/authorization for accounts. Without accounts, users can only browse the site; with accounts they can place orders after logging in. Although the front end functionality is limited to filling and purchasing from a shopping cart, backend tables are in place to track/provide users with their order history, as well as a points/rewards system (which currently only shows up as an "easter egg" in the console) - for future buildouts.<br />Completed January, 2022. 
       <span className="white" onClick={()=>window.open("https://github.com/ProfessionalMaxJS/Project_all_in_one")}>  Git Repo.</span>
       <span className="white" onClick={()=>window.open("https://chakra-cafe.herokuapp.com/")}>  App.</span>
         </p>
@@ -43,7 +54,7 @@ function WebExperience(){
       <h3>The Cinema</h3>
       <div className="blue">
       <a href="https://youtu.be/opGSTxjautA" target="_blank" rel="noreferrer noopener">
-      <img src={cinema} alt="USS_Rapture demo" />
+      <img onMouseOver={()=>setPlayingCinema(true)} onMouseLeave={()=>setPlayingCinema(false)} src={playingCinema ? cinema : cinemaStill} alt="USS_Rapture demo" />
       </a>
       <p>Test<br />Completed September, 2021. 
       <span className="white" onClick={()=>window.open("https://github.com/ProfessionalMaxJS/USS_Rapture")}>  Git Repo.</span>
