@@ -3,14 +3,14 @@ import dtdj from './gifs/DeathToDadJokes.gif'
 import dtdjStill from './gifs/dtdjStill.jpg'
 import chakra from './gifs/ChakraCafe.gif'
 import chakraStill from './gifs/ChakraCafeStill.jpg'
-import reciPlenty from './gifs/ReciPlenty.gif'
+// import reciPlenty from './gifs/ReciPlenty.gif'
 import reciPlentyStill from './gifs/ReciPlentyStill.jpg'
 import cinema from './gifs/USSRapture.gif'
 import cinemaStill from './gifs/CinemaStill.jpg'
 
 function WebExperience(){
 
-  const [playingReciPlenty, setPlayingReciPlenty] = useState(false)
+  // const [playingReciPlenty, setPlayingReciPlenty] = useState(false)
   const [playingDTDJ, setPlayingDTDJ] = useState(false)
   const [playingChakra, setPlayingChakra] = useState(false)
   const [playingCinema, setPlayingCinema] = useState(false)
