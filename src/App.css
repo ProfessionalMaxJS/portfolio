@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@100;500&display=swap');
 
-/* *{
+ /* *{
   border:1px solid red;
-}
+} */
 
-*:hover{
+/*:hover{
   border: 1px solid blue;
 } */
+
+
+.inLinks{
+  display:flex;
+  justify-content:space-around;
+  font-size:2.5rem;
+  margin: 3vh 0vw 3vh 0vw;
+}
 
 body {
   background-color: #282c34;
@@ -94,7 +102,7 @@ h3 {
 }
 
 #bottom-bottom{
-  margin-bottom: 6vw;
+  margin-bottom: 6vh;
 }
 
 .App-header {
@@ -125,7 +133,15 @@ div.hovee{
   animation: nyc-flag 9s infinite;
   margin-top: -8vh;
   margin-bottom: -8vh;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
 }
+
+/* #myNameIs:hover{
+  border: 1px solid blue;
+} */
 
 @keyframes nyc-flag{
   0% { color: white;  }
@@ -137,9 +153,6 @@ div.hovee{
   font-size: 1.4rem;
   text-align: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #webdeveloper{
