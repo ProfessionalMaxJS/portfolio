@@ -44,7 +44,7 @@ function App() {
     <div>l</div><div>o</div><div>p</div><div>e</div>
     <div className="hovee" id="resume" onClick={()=>paginate("/AssociatedExperience")} onMouseOver={()=>setAssoc(true)} onMouseLeave={()=>setAssoc(false)} >r 
     {assoc&&
-     <span > =&gt; Resume / Other Cool Things&nbsp;</span>}
+     <span > =  Resume / Other Cool Things&nbsp;</span>}
     </div>
     </div>
 

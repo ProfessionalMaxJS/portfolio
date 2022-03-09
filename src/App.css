@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@100;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@100;500&family=Smooch+Sans:wght@250&display=swap');
  /* *{
   border:1px solid red;
-} */
+} 
 
-/*:hover{
+:hover{
   border: 1px solid blue;
 } */
 
+body {
+  background-color: #282c34;
+}
+
+.App-header {
+  text-align: left;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: calc(1.6rem);
+  color: white;
+}
 
 .inLinks{
   display:flex;
@@ -16,19 +30,16 @@
   margin: 3vh 0vw 3vh 0vw;
 }
 
-body {
-  background-color: #282c34;
-}
-
 .white{
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   color: white;
   text-decoration: none;
 }
-.white:visited{
+/* .white:visited{
   color:white;
-}
+} */
+
 .white:hover{
   color:blue;
 }
@@ -102,20 +113,9 @@ h3 {
 }
 
 #bottom-bottom{
-  margin-bottom: 6vh;
+  margin-bottom: 10vh;
 }
 
-.App-header {
-  text-align: left;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: calc(1.6rem);
-  color: white;
-}
 
 div.hovee{
   color: white;
