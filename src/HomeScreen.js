@@ -1,7 +1,12 @@
 // import glove from './gifs/Max_Glove.png'
 import {Link} from 'react-router-dom'
+import { useState } from 'react'
+import NPH from './gifs/NPH.gif'
+import NPHstill from './gifs/NPHstill.jpg'
 
 function HomeScreen(){
+
+    const [playingJerry, setPlayingJerry] = useState(false)
 
     return(
         <>
@@ -16,14 +21,19 @@ function HomeScreen(){
         <a className="white" target="_blank" rel="noreferrer noopener" href="http://www.maxees.blogspot.com" >Blog</a>
         <a className="white" target="_blank" rel="noreferrer noopener" href="https://www.GitHub.com/ProfessionalMaxJS" >GitHub</a>
         <a className="white" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/maxees/" >LinkedIn</a>
-        <a className="white" target="_blank" rel="noreferrer noopener" href="mailto:max@maxees.dev?subject=You're Hired!" >Max@MaxEES.dev</a>
     </div> 
         <div className="inLinks" >
+        <a className="white" target="_blank" rel="noreferrer noopener" href="mailto:max@maxees.dev?subject=You're Hired!" >Max@MaxEES.dev</a>
         <Link className="white" to="/WebExperience">Experience / Projects</Link>    
-        <Link className="white" to="/AssociatedExperience" >Resume / Other Cool Things </Link>
+        <a className="white" target="_blank" rel="noreferrer noopener" href="https://tinyurl.com/mesWH" >Resume</a>
         </div>
 
-        <p style={{textAlign:"left", margin:"10vh 6vw 12vh 6vw"}}  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to my site! And thanks for stopping by. Here you'll find my collection of projects accomplished for/while-attending the <a className="white" style={{fontSize:"1.3rem"}} target="_blank" rel="noreferrer noopener" href="https://flatironschool.com/courses/coding-bootcamp#/" >FlatIron School</a>'s Software Engineering Program. As proud as I am to have graduated from their first in person cohort since 2020, I am even more excited to be entering a whole new world of Computer Science. After learning some introductory Programming in high school, in the following professional years I largely moved away from digital output, focusing instead on agriculture, fermentation and food science. Although I didn't realize it at the time, there has been a consistent theme to this output: I've taken on the pursuits of a maker. What I reacquainted myself with, after I stopped and thought about it, was how creative, and productive, and tangible - and just how much fun - it is to make software. Now that I've found it, there's no turning back. If you think my skills can be put to use on a project you have in mind, please reach out! I look forward to working with you.<br/><br/>Cheers,<br/>-Max<br/>Mar 07, 2022  </p>
+        <div className="blue" style={{textAlign:"center"}}  >
+        <div style={{textAlign:"left", margin:"10vh 6vw 12vh 6vw"}}  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is Max, and I'm a Full Stack developer, specializing in ReactJS and Ruby on Rails. Currently, I'm working on:  </div>
+        <a href="https://www.noparticularhours.com" target="_blank" rel="noreferrer noopener">
+      <img onMouseOver={()=>setPlayingJerry(true)} onMouseLeave={()=>setPlayingJerry(false)} src={playingJerry ? NPH : NPHstill} alt="No Particular Hours demo" />      </a>
+        </div>
+
     </div>
         </>
     )
