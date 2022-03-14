@@ -7,6 +7,7 @@ import reciPlenty from './gifs/ReciPlenty.gif'
 import reciPlentyStill from './gifs/ReciPlentyStill.jpg'
 import cinema from './gifs/USSRapture.gif'
 import cinemaStill from './gifs/CinemaStill.jpg'
+import {Link} from 'react-router-dom'
 
 function WebExperience(){
 
@@ -17,6 +18,8 @@ function WebExperience(){
   
     return(
         <>
+    <Link className="goHome" style={{fontSize:"2rem"}} to="/" >Home</Link>
+        
         <h2 id="myProjects" >My Projects</h2>
 
         <div className="projectBox" >
@@ -78,6 +81,8 @@ Cafe-type mockup site built with <a className="white" target="_blank" rel="noref
         My first ever site! Made as an onboarding/pre-class requirement for the FlatIron School, I had some fun with this one. The stylistic accomplishments I'm most proud of are hilighted in the accompanying video (to the left of this text), but in the future I plan to revisit/change the user's popcorn interaction, as well as implement onScroll event listeners to darken the background image (ie, the lights going down at showtime). Details about my experiences building this website were the subject of an early blog post, linked <a style={{fontSize:"1.4rem"}} className="white" target="_blank" rel="noreferrer noopener" href="https://maxees.blogspot.com/2021/10/website-in-development.html">here</a>. The "feature presentation" of this website, a video I made in college, is linked and discussed in greater detail elsewhere in this portfolio, but also available  <a style={{fontSize:"1.4rem"}} className="white" target="_blank" rel="noreferrer noopener" href="https://youtu.be/i11FDMUffMU">here</a>.
       </div>
       </div>
+
+      <Link className="goHome" to="/" >Home</Link>
 
         </>
     )

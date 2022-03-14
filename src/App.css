@@ -116,6 +116,11 @@ h3 {
   margin-bottom: 10vh;
 }
 
+.goHome{
+  font-size: 4rem;
+  color:white;
+  animation: nyc-flag 9s infinite;
+}
 
 div.hovee{
   color: white;

@@ -28,7 +28,7 @@ function HomeScreen(){
         <a className="white" target="_blank" rel="noreferrer noopener" href="https://tinyurl.com/mesWH" >Resume</a>
         </div>
 
-        <div className="blue" style={{textAlign:"center"}}  >
+        <div className="blue"  >
         <div style={{textAlign:"left", margin:"10vh 6vw 12vh 6vw"}}  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is Max, and I'm a Full Stack developer, specializing in ReactJS and Ruby on Rails. Currently, I'm working on:  </div>
         <a href="https://www.noparticularhours.com" target="_blank" rel="noreferrer noopener">
       <img onMouseOver={()=>setPlayingJerry(true)} onMouseLeave={()=>setPlayingJerry(false)} src={playingJerry ? NPH : NPHstill} alt="No Particular Hours demo" />      </a>

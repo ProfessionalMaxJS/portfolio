@@ -8,10 +8,10 @@ import { useNavigate, Route, Routes} from 'react-router-dom'
 
 function App() {
 
-  const paginate = useNavigate()
-  const [home, setHome] = useState(false)
-  const [web, setWeb] = useState(false)
-  const [assoc, setAssoc] = useState(false)
+  // const paginate = useNavigate()
+  // const [home, setHome] = useState(false)
+  // const [web, setWeb] = useState(false)
+  // const [assoc, setAssoc] = useState(false)
 
   return (
     <>
@@ -22,7 +22,7 @@ function App() {
   <Route path="/WebExperience" element={<WebExperience />} />
 </Routes>
 
-    <div id="webdeveloper" >
+    {/* <div id="webdeveloper" >
     
     <div id="web" style={{display: "flex"}} >
     <div>w</div><div>e</div>
@@ -33,7 +33,7 @@ function App() {
     </div>
    
     <div id="deve" style={{display: "flex"}}>
-    <div>d{/*</div><div>*/}e</div><div>v</div>
+    <div>de</div><div>v</div>
     <div className="hovee" id="experience" onClick={()=>paginate("/WebExperience")} onMouseOver={()=>setWeb(true)} onMouseLeave={()=>setWeb(false)} >e 
      {web&&
      <span > =&gt; Experience / Projects&nbsp;&nbsp;</span>}
@@ -48,7 +48,7 @@ function App() {
     </div>
     </div>
 
-    </div>
+    </div> */}
 
     {/* <div id="links" style={{ display: "flex", alignItems: "stretch", flexDirection: "column", backgroundColor:"#D3D3D3"}} >
   
