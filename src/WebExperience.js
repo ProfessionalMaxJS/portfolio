@@ -20,8 +20,10 @@ function WebExperience(){
         <>
     <Link className="goHome" style={{fontSize:"2rem"}} to="/" >Home</Link>
         
-        <h2 id="myProjects" >My Projects</h2>
-
+        <div id="myProjects" >
+        <h2 >My Projects</h2>
+        <p>For best results, please rotate your phone to Landscape mode.</p>
+        </div>
         <div className="projectBox" >
         <div style={{display:"flex", flexDirection:"column"}} className="blue">
         <h3 >ReciPlenty</h3 >
