@@ -121,7 +121,7 @@ h3 {
 }
 
 .goHome{
-  font-size: 4rem;
+  font-size: 2rem;
   color:white;
   animation: nyc-flag 9s infinite;
 }
@@ -159,6 +159,10 @@ div.hovee{
     transform: translateX(100%);
     /* border: 1px solid orangered; */
     animation: left-to-right 10s linear infinite;
+  }
+
+  .projectBox{
+    flex-direction: column;
   }
 }
 
