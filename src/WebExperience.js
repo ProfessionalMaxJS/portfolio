@@ -22,7 +22,7 @@ function WebExperience(){
         
         <div id="myProjects" >
         <h2 >My Projects</h2>
-        <p>For best results, please rotate your phone to Landscape mode.</p>
+        <p style={{fontSize:"1.5rem"}} >For best results, please rotate your phone to Landscape mode.</p>
         </div>
 
 
