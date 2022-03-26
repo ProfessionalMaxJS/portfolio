@@ -1,5 +1,5 @@
 import './App.css';
-import AssociatedExperience from './AssociatedExperience'
+// import AssociatedExperience from './AssociatedExperience'
 import WebExperience from './WebExperience'
 import HomeScreen from './HomeScreen'
 // import {useState} from 'react'
@@ -18,8 +18,8 @@ function App() {
     <div className="App-header">
 <Routes>
   <Route path="/" element={<HomeScreen />} />
-  <Route path="/AssociatedExperience" element={<AssociatedExperience />} />
   <Route path="/WebExperience" element={<WebExperience />} />
+  <Route path="*" element={<HomeScreen />} />
 </Routes>
 
     {/* <div id="webdeveloper" >
