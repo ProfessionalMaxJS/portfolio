@@ -19,7 +19,7 @@ function App() {
 <Routes>
   <Route path="/" element={<HomeScreen />} />
   <Route path="/WebExperience" element={<WebExperience />} />
-  <Route path="*" element={<HomeScreen />} />
+  <Route path="/*" element={<HomeScreen />} />
 </Routes>
 
     {/* <div id="webdeveloper" >
