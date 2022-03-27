@@ -4,6 +4,7 @@ import WebExperience from './WebExperience'
 import HomeScreen from './HomeScreen'
 // import {useState} from 'react'
 import { Route, Routes} from 'react-router-dom'
+import Redirect from './Redirect'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 <Routes>
   <Route path="/" element={<HomeScreen />} />
   <Route path="WebExperience" element={<WebExperience />} />
-  <Route path="*" element={<HomeScreen />} />
+  <Route path="*" element={<Redirect />} />
 </Routes>
 
     {/* <div id="webdeveloper" >
