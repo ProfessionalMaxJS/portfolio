@@ -39,8 +39,9 @@ function WebExperience(){
         <p style={{fontSize:"1.5rem"}} >For best results, please rotate your phone to Landscape mode.</p>
         </div>
 
+      <ProjectDetail project={projects[0]} />
 
-        <div className="projectBox" >
+        {/* <div className="projectBox" >
         <div style={{display:"flex", flexDirection:"column"}} className="blue">
         <h3 >{projects[0].title}</h3 >
         <a href={projects[0].vidLink} target="_blank" rel="noreferrer noopener">
@@ -54,7 +55,7 @@ function WebExperience(){
       <div className="textBox" >
       {projects[0].description}
         </div>
-      </div>
+      </div> */}
 
       <div className="projectBox" >
         <div style={{display:"flex", flexDirection:"column"}} className="blue">
