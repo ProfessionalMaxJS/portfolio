@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ProjectDetail from './ProjectDetail'
 import dtdj from './gifs/DeathToDadJokes.gif'
 import dtdjStill from './gifs/dtdjStill.jpg'
 import chakra from './gifs/ChakraCafe.gif'
@@ -15,6 +16,19 @@ function WebExperience(){
   const [playingDTDJ, setPlayingDTDJ] = useState(false)
   const [playingChakra, setPlayingChakra] = useState(false)
   const [playingCinema, setPlayingCinema] = useState(false)
+
+  const projects = [
+    {
+      title: "ReciPlenty",
+      vidLink: "https://youtu.be/Mw1BVkK5coM",
+      projectGif: reciPlenty,
+      projectJpg: reciPlentyStill,
+      lastUpdated: "February, 2022. ",
+      gitRepo: "https://github.com/ProfessionalMaxJS/ReciPlenty",
+      linkedApp: "https://reciplenty.herokuapp.com/",
+      description: "Capstone project for FlatIron School Software Engineering course. Utilizes Ruby bcrypt gem, Rails Active Storage technology, Spoonacular API (+2 others), to bring users a straightforward way to log their favorite recipes. Recipes developed by the user can be written on a 'worksheet'-like screen (where users can also upload photos for their dishes), and  saved onto their list. Recipes discovered through the Search bar can also be saved to the same master list. All saved recipes include a toggle for the user to track whether or not they have cooked that dish, as well as the ability to be edited."
+    } 
+  ]
   
     return(
         <>
@@ -28,17 +42,17 @@ function WebExperience(){
 
         <div className="projectBox" >
         <div style={{display:"flex", flexDirection:"column"}} className="blue">
-        <h3 >ReciPlenty</h3 >
-        <a href="https://youtu.be/Mw1BVkK5coM" target="_blank" rel="noreferrer noopener">
-      <img onMouseOver={()=>setPlayingReciPlenty(true)} onMouseLeave={()=>setPlayingReciPlenty(false)} src={playingReciPlenty ? reciPlenty : reciPlentyStill} alt="ReciPlenty demo" />
+        <h3 >{projects[0].title}</h3 >
+        <a href={projects[0].vidLink} target="_blank" rel="noreferrer noopener">
+      <img onMouseOver={()=>setPlayingReciPlenty(true)} onMouseLeave={()=>setPlayingReciPlenty(false)} src={playingReciPlenty ? projects[0].projectGif : projects[0].projectJpg} alt="ReciPlenty demo" /> 
       </a>
-      <div style={{display:"flex", textAlign:"center"}}> Last updated February, 2022.&nbsp;
-      <a className="white" href="https://github.com/ProfessionalMaxJS/ReciPlenty" target="_blank" rel="noreferrer noopener">Git Repo.&nbsp;</a>
-      <a className="white" href="https://reciplenty.herokuapp.com/" target="_blank" rel="noreferrer noopener" >App.</a>
+      <div style={{display:"flex", textAlign:"center"}}> {projects[0].lastUpdated}&nbsp;
+      <a className="white" href={projects[0].gitRepo} target="_blank" rel="noreferrer noopener">Git Repo.&nbsp;</a>
+      <a className="white" href={projects[0].linkedApp} target="_blank" rel="noreferrer noopener" >App.</a>
       </div>
       </div>
       <div className="textBox" >
-      Capstone project for FlatIron School Software Engineering course. Utilizes Ruby bcrypt gem, Rails Active Storage technology, Spoonacular API (+2 others), to bring users a straightforward way to log their favorite recipes. Recipes developed by the user can be written on a "worksheet"-like screen (where users can also upload photos for their dishes), and  saved onto their list. Recipes discovered through the Search bar can also be saved to the same master list. All saved recipes include a toggle for the user to track whether or not they have cooked that dish, as well as the ability to be edited.
+      {projects[0].description}
         </div>
       </div>
 
