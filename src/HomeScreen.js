@@ -1,12 +1,12 @@
 // import glove from './gifs/Max_Glove.png'
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
-import NPH from './gifs/NPH.gif'
-import NPHstill from './gifs/NPHstill.jpg'
+import BA from './gifs/BA.gif'
+import BAstill from './gifs/BAstill.jpg'
 
 function HomeScreen(){
 
-    const [playingJerry, setPlayingJerry] = useState(false)
+    const [playingBA, setPlayingBA] = useState(false)
 
     return(
         <>
@@ -32,8 +32,8 @@ function HomeScreen(){
         <div style={{textAlign:"left", margin:"10vh 0vw 12vh 0vw"}}  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is Max, and I'm a Full Stack developer, specializing in ReactJS and Ruby on Rails. Currently, I'm working on:  </div>
         <div >
 
-        <a href="https://www.noparticularhours.com" target="_blank" rel="noreferrer noopener">
-      <img onMouseOver={()=>setPlayingJerry(true)} onMouseLeave={()=>setPlayingJerry(false)} src={playingJerry ? NPH : NPHstill} alt="No Particular Hours demo" />      </a>
+        <a href="https://www.blueapron.com" target="_blank" rel="noreferrer noopener">
+      <img onMouseOver={()=>setPlayingBA(true)} onMouseLeave={()=>setPlayingBA(false)} src={playingBA ? BA : BAstill} alt="BlueApron.com screencap" />      </a>
         </div>
         </div>
 
