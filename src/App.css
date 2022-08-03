@@ -31,6 +31,10 @@ body {
   margin: 3vh 0vw 3vh 0vw;
 }
 
+.inLinks a{
+  margin: 0vh 2vw 0vh 2vw;
+}
+
 .white{
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
