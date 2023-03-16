@@ -1,12 +1,12 @@
 // import glove from './gifs/Max_Glove.png'
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
-import BA from './gifs/BA.gif'
-import BAstill from './gifs/BAstill.jpg'
+import Tallies from './gifs/Tallies.gif'
+import TalliesStill from './gifs/TalliesStill.jpg'
 
 function HomeScreen(){
 
-    const [playingBA, setPlayingBA] = useState(false)
+    const [playingTallies, setPlayingTallies] = useState(false)
 
     return(
         <>
@@ -32,9 +32,8 @@ function HomeScreen(){
         <div id="homePageProject" className="blue"  >
         <div style={{textAlign:"left", margin:"10vh 0vw 12vh 0vw"}}  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is Max, and I'm a Full Stack developer, specializing in ReactJS and Ruby on Rails. Currently, I'm working on:  </div>
         <div >
-
-        <a href="https://www.blueapron.com" target="_blank" rel="noreferrer noopener">
-      <img onMouseOver={()=>setPlayingBA(true)} onMouseLeave={()=>setPlayingBA(false)} src={playingBA ? BA : BAstill} alt="BlueApron.com screencap" />      </a>
+        <a href="https://www.npmjs.com/package/tallies" target="_blank" rel="noreferrer noopener">
+      <img onMouseOver={()=>setPlayingTallies(true)} onMouseLeave={()=>setPlayingTallies(false)} src={playingTallies ? Tallies : TalliesStill} alt="BlueApron.com screencap" />      </a>
         </div>
         </div>
 
