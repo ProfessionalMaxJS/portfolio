@@ -25,7 +25,7 @@ function HomeScreen(){
     {/* </div> 
         <div className="inLinks" > */}
         <a className="white" target="_blank" rel="noreferrer noopener" href="mailto:max@maxees.dev?subject=You're Hired!" >Max@MaxEES.dev</a>
-        <Link className="white" to="/WebExperience">Experience / Projects</Link>    
+        <Link className="white" to="/WebExperience">Projects</Link>    
         <a className="white" target="_blank" rel="noreferrer noopener" href="https://tinyurl.com/maxeesResume" >Resume</a>
         </div>
 
